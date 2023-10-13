@@ -1,3 +1,5 @@
+import { showMoves } from "./show-moves"
+
 const squareRegistry = new Map()
 
 const chessSquare = (x, y) => {
@@ -69,10 +71,8 @@ const knightTravails = (start, finish) => {
         squareCoord.push(square.name());
     });
     // console.log(squareCoord);
-    showMoves(path, squareCoord);       //Not added yet
+    showMoves(path, squareCoord);
 
 }
-
-
 
 export { knightTravails }
